@@ -32,9 +32,11 @@ r.type('cfadestination', '8003535')
 
 r.click('Save')
 r.wait('5')
+r.close()
 
 
 #Operator Extension 8004000 - adding callfwd to send calls to 8003535 - inside sales
+r.init()
 r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 
 #Only for First time Login
