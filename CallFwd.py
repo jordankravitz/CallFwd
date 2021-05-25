@@ -10,8 +10,8 @@ r.init()
 r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 
 #Only for First time Login
-#r.click('Advanced')
-#r.click('Proceed to 172.16.1.15 (unsafe)')
+r.click('Advanced')
+r.click('Proceed to 172.16.1.15 (unsafe)')
 
 #Login into CUCM with stored LDAP Username/PW
 r.type('//*[@name="j_username"]', un) 
@@ -38,8 +38,8 @@ r.wait('5')
 r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 
 #Only for First time Login
-#r.click('Advanced')
-#r.click('Proceed to 172.16.1.15 (unsafe)')
+r.click('Advanced')
+r.click('Proceed to 172.16.1.15 (unsafe)')
 
 #Login into CUCM with stored LDAP Username/PW
 r.type('//*[@name="j_username"]', un) 
