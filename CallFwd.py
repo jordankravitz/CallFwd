@@ -34,9 +34,9 @@ r.wait(5)
 r.type('cfadestination', '8003535')
 
 r.click('Save')
-r.wait('5')
+r.wait(5)
 r.close()
-
+r.wait(5)
 
 #Operator Extension 8004000 - adding callfwd to send calls to 8003535 - inside sales
 r.init()
@@ -66,7 +66,7 @@ r.wait(5)
 r.type('cfadestination', '8003535')
 
 r.click('Save')
-r.wait('5')
+r.wait(5)
 
 r.close()
 
