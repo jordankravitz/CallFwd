@@ -27,7 +27,7 @@ r.wait(5)
 
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
-#r.keyboard('[tab]')
+
 r.type('searchString0', '8003560')
 r.click('findButton')
 r.wait(5)
@@ -38,15 +38,15 @@ r.type('cfadestination', '8003535')
 
 r.click('Save')
 r.wait(5)
-r.close()
+#r.close()
 
-'''
+
 r.wait(5)
 
 #Operator Extension 8004000 - adding callfwd to send calls to 8003535 - inside sales
-r.init()
-r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 
+r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
+'''
 #Only for First time Login
 if r.exist('Advanced'):
     r.click('Advanced')
@@ -61,10 +61,10 @@ if r.exist('j_password'):
 if r.exist('cuesLoginButton'):
     r.click('cuesLoginButton') 
 r.wait(5)
-
+'''
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
-#r.keyboard('[tab]')
+r.type('searchString0', '[clear]')
 r.type('searchString0', '8003640')
 r.click('findButton')
 r.wait(5)
@@ -78,4 +78,3 @@ r.wait(5)
 
 r.close()
 
-'''
