@@ -56,6 +56,7 @@ r.wait(5)
 '''
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
+r.type('searchString0', '[clear]')
 r.type('searchString0', '8003640')
 r.click('findButton')
 r.wait(5)
