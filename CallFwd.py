@@ -28,7 +28,9 @@ r.wait(5)
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
 #r.keyboard('[tab]')
-r.type('searchString0', '8003560')
+r.click('searchString0')
+r.type('8003560')
+#r.type('searchString0', '8003560')
 r.click('findButton')
 r.wait(5)
 r.click('8003560') 
@@ -63,7 +65,10 @@ r.wait(5)
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
 #r.keyboard('[tab]')
-r.type('searchString0', '8003560')
+r.dclick('searchString0')
+r.type('[clear]')
+r.type('8003560')
+#r.type('searchString0', '8003560')
 r.click('findButton')
 r.wait(5)
 r.click('8003560') 
