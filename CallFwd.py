@@ -17,9 +17,12 @@ if r.exist('Proceed to 172.16.1.15 (unsafe)'):
     r.click('Proceed to 172.16.1.15 (unsafe)')
 
 #Login into CUCM with stored LDAP Username/PW
-r.type('//*[@name="j_username"]', un) 
-r.type('//*[@name="j_password"]',pw)
-r.click('cuesLoginButton') 
+if r.exist('j_username'):
+    r.type('j_username', un) 
+if r.exist('j_password'):
+    r.type('j_password',pw)
+if r.exist('cuesLoginButton'):
+    r.click('cuesLoginButton') 
 r.wait(5)
 
 
@@ -49,10 +52,10 @@ if r.exist('Proceed to 172.16.1.15 (unsafe)'):
     r.click('Proceed to 172.16.1.15 (unsafe)')
 
 #Login into CUCM with stored LDAP Username/PW
-if r.exist('//*[@name="j_username"]'):
-    r.type('//*[@name="j_username"]', un) 
-if r.exist('//*[@name="j_password"]'):
-    r.type('//*[@name="j_password"]',pw)
+if r.exist('j_username'):
+    r.type('j_username', un) 
+if r.exist('j_password'):
+    r.type('j_password',pw)
 if r.exist('cuesLoginButton'):
     r.click('cuesLoginButton') 
 r.wait(5)
