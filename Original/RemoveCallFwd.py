@@ -30,7 +30,7 @@ if r.exist('j_password'):
 if r.exist('cuesLoginButton'):
     r.click('cuesLoginButton') 
 
-    
+
 r.wait(10)
 
 r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
@@ -39,15 +39,14 @@ r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 r.type('searchString0', '[clear]')
 r.type('searchString0', '8003560')
 r.click('findButton')
-r.wait(5)
+r.wait(10)
 r.click('8003560') 
-r.wait(5)
+r.wait(10)
 
 r.type('cfadestination', '[clear]')
 
 r.click('Save')
 r.wait(5)
-
 
 #Operator Extension 8004000 - adding callfwd to send calls to 8003535 - inside sales
 
@@ -55,17 +54,16 @@ r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
 r.type('searchString0', '[clear]')
-r.wait(5)
 r.type('searchString0', '8003640')
 r.click('findButton')
-r.wait(5)
+r.wait(10)
 r.click('8003640') 
-r.wait(5)
+r.wait(10)
 
 r.type('cfadestination', '[clear]')
 
 r.click('Save')
-r.wait(5)
+r.wait(10)
 
 r.close()
 
