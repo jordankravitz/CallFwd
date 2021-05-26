@@ -51,6 +51,7 @@ r.wait(5)
 #Operator Extension 8004000 - adding callfwd to send calls to 8003535 - inside sales
 
 r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
+r.wait(10)
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
 r.type('searchString0', '[clear]')
