@@ -23,16 +23,16 @@ if r.exist('j_password'):
     r.type('j_password',pw)
 if r.exist('cuesLoginButton'):
     r.click('cuesLoginButton') 
-r.wait(5)
+r.wait(10)
 
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
 
 r.type('searchString0', '8003560')
 r.click('findButton')
-r.wait(5)
+r.wait(10)
 r.click('8003560') 
-r.wait(5)
+r.wait(10)
 
 r.type('cfadestination', '8003535')
 
@@ -67,14 +67,14 @@ r.wait(5)
 r.type('searchString0', '[clear]')
 r.type('searchString0', '8003640')
 r.click('findButton')
-r.wait(5)
+r.wait(10)
 r.click('8003640') 
-r.wait(5)
+r.wait(10)
 
 r.type('cfadestination', '8003535')
 
 r.click('Save')
-r.wait(5)
+r.wait(10)
 
 r.close()
 
