@@ -1,4 +1,5 @@
 import rpa as r
+from tagui import exist
 
 #un = input ("What is your LDAP Username? ")
 #pw = input("What is your ldap password? ")
@@ -29,13 +30,13 @@ if r.exist('j_password'):
 if r.exist('cuesLoginButton'):
     r.click('cuesLoginButton') 
 
-
+    
 r.wait(10)
 
 r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
-#r.keyboard('[tab]')
+r.type('searchString0', '[clear]')
 r.type('searchString0', '8003560')
 r.click('findButton')
 r.wait(5)
