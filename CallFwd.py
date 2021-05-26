@@ -37,10 +37,10 @@ r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 
 #Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
 r.type('searchString0', '[clear]')
-r.type('searchString0', '8003560')
+r.type('searchString0', '8006000')
 r.click('findButton')
 r.wait(10)
-r.click('8003560') 
+r.click('8006000') 
 r.wait(10)
 
 r.type('cfadestination', '8003535')
@@ -52,12 +52,12 @@ r.wait(5)
 
 r.url('https://172.16.1.15/ccmadmin/directoryNumberFindList.do')
 
-#Operator Extension 8006000 - adding callfwd to send calls to 8003535 - inside sales
+#Operator Extension 8004000 - adding callfwd to send calls to 8003535 - inside sales
 r.type('searchString0', '[clear]')
-r.type('searchString0', '8003640')
+r.type('searchString0', '8004000')
 r.click('findButton')
 r.wait(10)
-r.click('8003640') 
+r.click('8004000') 
 r.wait(10)
 
 r.type('cfadestination', '8003535')
